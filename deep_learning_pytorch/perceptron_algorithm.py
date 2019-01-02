@@ -49,11 +49,11 @@ boundary_lines = trainPerceptronAlgorithm(X, y, learn_rate=learn_rate, num_epoch
 # ---------------------------------------------------------
 
 plt.figure(figsize=(10,10))
-plt.xlim(0,1)
-plt.ylim(0,1)
+plt.xlim(-.5,1.5)
+plt.ylim(-.5,1.5)
 
 x = np.linspace(0,1,100)
-colors = ['gray']*(len(boundary_lines)-1)+['orange']
+colors = ['green']*(len(boundary_lines)-1)+['black']
 styles = ['dashed']*(len(boundary_lines)-1)+[None]
 alphas = np.linspace(0,1,len(boundary_lines))
 
