@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('perceptron_data.csv',header=None)
+df = pd.read_csv('data.csv',header=None)
 df.columns = ['x1', 'x2', 'y']
 
 def stepFunction(t):
@@ -43,7 +43,7 @@ y = np.array(df['y'])
 
 learn_rate = .01
 num_epochs = 50
-
+np.random.seed(42)
 boundary_lines = trainPerceptronAlgorithm(X, y, learn_rate=learn_rate, num_epochs=num_epochs)
 
 # ---------------------------------------------------------
@@ -56,6 +56,8 @@ x = np.linspace(0,1,100)
 colors = ['green']*(len(boundary_lines)-1)+['black']
 styles = ['dashed']*(len(boundary_lines)-1)+[None]
 alphas = np.linspace(0,1,len(boundary_lines))
+
+plt.pause(5)
 
 plt.scatter(df['x1'], df['x2'], c=np.where(np.array(df['y']==1),'red','blue'))
 
