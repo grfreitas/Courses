@@ -5,6 +5,7 @@ __pycache__/
 
 # Mine
 *.csv
+lensdata/
 
 # C extensions
 *.so
