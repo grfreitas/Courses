@@ -6,6 +6,7 @@ __pycache__/
 # Mine
 *.csv
 lensdata/
+GAN (deepAstro course)/figures
 deepAstro/spec4000/
 *.pyc
 
