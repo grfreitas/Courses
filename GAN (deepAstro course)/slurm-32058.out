@@ -1,0 +1,19 @@
+
+## Job iniciado em 10-02-2019 as 20:03:36 #####################
+
+
+## Jobs ativos de manuel: 
+
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             32058  cosmoobs      GAN   manuel  R       0:00      1 c008
+
+## Node de execucao do job:         c008 
+
+
+## Numero de tarefas para este job: 40 
+
+
+## Diretorio de submissao do job:   /home/manuel/GAN 
+
+2019-02-10 20:03:50.601601: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+slurmstepd: error: *** JOB 32058 ON c008 CANCELLED AT 2019-02-12T17:10:50 ***
